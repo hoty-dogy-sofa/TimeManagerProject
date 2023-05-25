@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".Work_List">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+        <Space
+            android:layout_width="150sp"
+            android:layout_height="100px" />
+
+        <TextView
+            android:id="@+id/textwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30sp" />
+        <Space
+            android:layout_width="40sp"
+            android:layout_height="100px" />
+        <ImageView
+            android:id="@+id/imagework"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            app:srcCompat="@drawable/coin" />
+    </TableRow>
+    <Space
+        android:layout_width="40sp"
+        android:layout_height="200px" />
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ввести дело" />
+    <Button
+        android:id="@+id/check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отметить выполнение" />
+    <Button
+        android:id="@+id/back_main_work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="go_back_work"
+        android:text="Назад" />
+    <Space
+        android:layout_width="150sp"
+        android:layout_height="80px" />
+
+    <TextView
+        android:id="@+id/work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Здесь будет ваше задание"
+        android:textSize="30sp" />
+
+
+</LinearLayout>

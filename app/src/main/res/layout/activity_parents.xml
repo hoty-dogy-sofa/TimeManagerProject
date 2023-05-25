@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Parents">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="50sp" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#7E7E7E"
+        android:backgroundTint="#818181"
+        android:hint="Login">
+
+    </EditText>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="25sp" />
+
+    <EditText
+        android:id="@+id/phrase"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#7E7E7E"
+        android:hint="KeyWord">
+
+    </EditText>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="25sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#7E7E7E"
+        android:hint="Password">
+
+    </EditText>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="45sp" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Обязательно запомните кодовое слово на случай смены пароля"
+        android:textColor="#FFA63737"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="45sp" />
+
+    <Button
+        android:id="@+id/filledin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Войти/Зарегистрироваться/Изменить пароль" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20sp" />
+
+    <Button
+        android:id="@+id/back_par_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="go_back_par"
+        android:text="Назад" />
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+        <Space
+            android:layout_width="150sp"
+            android:layout_height="100px" />
+
+        <TextView
+            android:id="@+id/textmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30sp" />
+        <Space
+            android:layout_width="40sp"
+            android:layout_height="100px" />
+        <ImageView
+            android:id="@+id/imagemain"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            app:srcCompat="@drawable/coin" />
+    </TableRow>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="200sp" />
+
+    <Button
+        android:id="@+id/btnwork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:onClick="go_work"
+        android:text="Список дел" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20sp" />
+
+    <Button
+        android:id="@+id/btnshop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:onClick="go_shop"
+        android:text="Магазин" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20sp" />
+
+    <Button
+        android:id="@+id/btnparents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:text="Для родителей" />
+
+
+</LinearLayout>

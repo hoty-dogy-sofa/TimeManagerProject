@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".Shop_Activity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+        <Space
+            android:layout_width="150sp"
+            android:layout_height="100px" />
+
+        <TextView
+            android:id="@+id/textshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30sp" />
+        <Space
+            android:layout_width="40sp"
+            android:layout_height="100px" />
+        <ImageView
+            android:id="@+id/imageshop"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            app:srcCompat="@drawable/coin" />
+    </TableRow>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="150sp" />
+    <TextView
+        android:id="@+id/citata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9DEFE7"
+        android:text="Тут будет цитата"
+        android:textSize="20sp"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="50sp" />
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Купить за 2 монеты" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="go_back_shop"
+        android:text="Назад" />
+</LinearLayout>
